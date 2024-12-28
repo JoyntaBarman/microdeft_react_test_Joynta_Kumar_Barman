@@ -1,11 +1,15 @@
+import CardList from "@/components/CardList";
 
 
-export default function Home() {
+export default async function Home() {
+  
   return (
-    <div className="text-black-bg dark:bg-black-bg dark:text-white mb-10 pt-5">
+    <div className="text-black-bg dark:bg-black-bg dark:text-white mb-10 p-5">
 
-      <h1>course cards</h1>
+      <CardList/>
       
     </div>
   );
 }
+
+

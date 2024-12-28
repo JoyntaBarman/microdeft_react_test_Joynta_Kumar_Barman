@@ -29,6 +29,10 @@
     backdrop-filter: blur(1000px);
     -webkit-backdrop-filter: blur(10px);
   }
+  .cardTitle{
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 :root {
   --black: #000000;
@@ -44,3 +48,5 @@
 html {
   scroll-behavior: smooth;
 }
+
+

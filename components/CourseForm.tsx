@@ -57,7 +57,7 @@ const CourseForm = () => {
         setErrorMessage(data?.status_message);
       }
     } catch (error) {
-        console.log(error)
+
         setErrorMessage("Something went wrong. Please try again.");
     } finally {
       setIsFormLoading(false);
