@@ -1,14 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Link from "next/link";
 import NeonEffect from "../NeonEffect";
 import { MdMenu } from "react-icons/md";
 import Image from "next/image";
 import { logo } from "@/app/assets/images";
+import { deleteLocalStorageToken, getLocalStorageToken } from "@/lib";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isExistUser, setIsExistUser] = useState<string | null>(null);
+  const pathName = usePathname();
+
+  useEffect(() => {
+    const user = getLocalStorageToken("authToken");
+    setIsExistUser(user);
+  }, [pathName]);
+
+  const handleLogout = () => {
+    const user = getLocalStorageToken("authToken");
+
+    setIsExistUser(null);
+    deleteLocalStorageToken("authToken");
+  };
 
   const taggleMenu = () => {
     setIsVisible((prev) => !prev);
@@ -17,16 +33,15 @@ const Navbar = () => {
   const navlinks = [
     { path: "/", text: "Home" },
     { path: "/signup", text: "Sign Up" },
-    
   ];
 
   return (
-    <div >
+    <div>
       <Container className="relative">
         <div className="shadow-md shadow-neon-blue/10">
           <nav className="flex justify-between items-center px-4 py-4 bg-medium-gray/60 dark:bg-black-bg text-very-light-gray z-50 relative">
             <div>
-              <Link  href="/" className="flex items-center ">
+              <Link href="/" className="flex items-center ">
                 <Image
                   src={logo}
                   alt="logo"
@@ -56,13 +71,21 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-5 relative">
               <NeonEffect className="px-5">
-                <Link
-                  href={"login"}
-                  target="_blank"
-                  className="px-4 py-2 hover:text-neon-greenish duration-500"
-                >
-                  Log In
-                </Link>
+                {isExistUser ? (
+                  <button
+                    onClick={handleLogout}
+                    className="px-4 hover:text-neon-greenish duration-500"
+                  >
+                    Log Out
+                  </button>
+                ) : (
+                  <Link
+                    href={"login"}
+                    className="px-4 hover:text-neon-greenish duration-500"
+                  >
+                    Log In
+                  </Link>
+                )}
               </NeonEffect>
               <button
                 onClick={taggleMenu}
@@ -89,7 +112,6 @@ const Navbar = () => {
               )}
             </div>
           </nav>
-          
         </div>
       </Container>
     </div>
