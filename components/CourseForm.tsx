@@ -2,16 +2,22 @@
 import React, { useEffect, useState } from "react";
 import Spinner from "./share/Spinner";
 import { getLocalStorageToken } from "@/lib";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import path from "path";
+
 
 const CourseForm = () => {
   const [isFormLoading, setIsFormLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
-  const [user, setUser] = useState<string | null>(getLocalStorageToken('authToken'));
-  const router = useRouter();
+  const [user, setUser] = useState<string | null>(null);
+  const pathName = usePathname();
+
 
  
+  useEffect(() => {
+    setUser(getLocalStorageToken('authToken'));
+  }, [pathName]);
     
   const handleSubmit = async (event: React.FocusEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -65,8 +71,8 @@ const CourseForm = () => {
   };
 
     if (!user) {
-        router.push('/login');
-        return;
+        
+        return <div className="text-2xl text-neon-blue font-semibold">Please login then add your course!</div>
     }
     
   return (

@@ -47,7 +47,7 @@ const CardList = () => {
     );
   }
   if (!courses.length) {
-    return <div className="w-full text-center mt-4">{" No card found!"}</div>;
+    return <div className="w-full text-center mt-4 text-xl font-bold text-neon-blue">{"You does not add course yet!"}</div>;
   }
 
   return (
@@ -57,7 +57,7 @@ const CardList = () => {
           <Card course={course} />
         </div>
       ))}
-      asdf
+
     </div>
   );
 };
