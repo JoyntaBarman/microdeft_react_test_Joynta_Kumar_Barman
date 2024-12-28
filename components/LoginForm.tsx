@@ -27,33 +27,34 @@ const LoginForm = () => {
     const password = formData.get("password");
 
     // Fetch data
+    try {
+      const response = await fetch(
+        "https://react-interview.crd4lc.easypanel.host/api/login",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            password,
+          }),
+        }
+      );
+      const data = await response.json();
 
-    const response = await fetch(
-      "https://react-interview.crd4lc.easypanel.host/api/login",
-      {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          password,
-        }),
+      if (data.status) {
+        console.log("this is trigered.");
+        setLocalStorageToken("authToken", data?.data?.token);
+        router.push("/");
+      } else {
+        setErrorMessage(data?.status_message);
       }
-    );
-    const data = await response.json();
-
-    if (data.status) {
-      console.log("this is trigered.");
-      setLocalStorageToken("authToken", data?.data?.token);
-      router.push("/");
-    } else {
-      setErrorMessage(data?.status_message);
+    } catch (error) {
+    } finally {
+      setIsFormLoading(false);
     }
-    console.log(data);
-
-    setIsFormLoading(false);
   };
 
   // Taggle function
