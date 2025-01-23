@@ -23,6 +23,13 @@ Clone this git repository
   npm install
   npm run dev
   ```
+
+  ## Add Mongodb Atlas string
+in .env file
+```bash
+  DB_CONNECTION_URL = //Mongodb atlas connect string
+  ```
+  if you don't add mongodb connection string then project data collect form local file.
   
 ## Then Go to client Directory
 ```bash
