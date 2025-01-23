@@ -1,0 +1,281 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.projectData = void 0;
+exports.projectData = [
+    {
+        id: {
+            $numberInt: "1",
+        },
+        title: "Brand Journey Improvements",
+        type: "project",
+        color: "purple",
+        client: "Organc",
+        work: ["Branding", "Logo design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469424/project1_gpgaqc.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469424/project2_y4kwmq.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469422/project4_rgsp8r.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "2",
+        },
+        title: "Brand Grouping",
+        type: "project",
+        color: "lime",
+        client: "FR",
+        work: ["Branding", "Logo design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469424/project2_y4kwmq.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469430/project3_aemqkl.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469431/project7_up4k4u.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "3",
+        },
+        title: "Brand Suggestions",
+        color: "green",
+        type: "project",
+        client: "T3d",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469430/project3_aemqkl.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469433/project3-1_uccfux.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469425/project3-2_augmxq.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "4",
+        },
+        title: "NFT Glimps",
+        type: "project",
+        color: "black",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469422/project4_rgsp8r.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469424/project1_gpgaqc.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469430/project3_aemqkl.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "5",
+        },
+        title: "Orvillebury",
+        type: "work",
+        color: "blue",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469431/work1_zgpje3.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469430/project3_aemqkl.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469424/project1_gpgaqc.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "6",
+        },
+        title: "West Lavada",
+        type: "work",
+        color: "green",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469434/work2_xkoynl.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469422/project4_rgsp8r.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469433/project3-1_uccfux.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "7",
+        },
+        title: "Rempelshire",
+        type: "work",
+        color: "aqua",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469433/work3_khjkzn.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469431/project7_up4k4u.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469433/project3-1_uccfux.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "8",
+        },
+        title: "Delfinaland",
+        type: "work",
+        color: "lime",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469433/work4_in87b4.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469437/work6_ldsrj2.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469434/work8_ozttba.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "9",
+        },
+        title: "Buckridgeburgh",
+        type: "work",
+        color: "fuchsia",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469437/work5_nei5g3.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469424/project1_gpgaqc.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469434/work8_ozttba.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "10",
+        },
+        title: "Pfefferstad",
+        type: "work",
+        color: "black",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469437/work6_ldsrj2.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469432/project6_yzmkqf.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469434/work8_ozttba.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "11",
+        },
+        title: "South Adrienne",
+        type: "work",
+        color: "purple",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469439/work7_lblnm6.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469434/work8_ozttba.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469432/project6_yzmkqf.jpg",
+        ],
+    },
+    {
+        id: {
+            $numberInt: "12",
+        },
+        title: "Lake Trevor",
+        type: "work",
+        color: "maroon",
+        client: "Rumanda",
+        work: ["NFT Design"],
+        story: [
+            "The fact that photography has different meanings to different people is one of the many components of its appeal. Photography is such an important part of our life that it is now very difficult to imagine the world without it.",
+            "We cannot imagine a wedding without the opportunity to capture it on film, we would not be able to remember the growing up of children or the holidays if we did not have pictures.",
+        ],
+        day: [
+            "Everywhere we are haunted by photography in newspapers, magazines, advertisements on television on the Internet, but we still crave even more",
+            "And what helps to achieve a good result? We will look at these issues and some of the possibilities of photography and explain that it is a combination of thought imagination, visual design, technical skills and organizational skills",
+        ],
+        images: [
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469434/work8_ozttba.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469432/project6_yzmkqf.jpg",
+            "https://res.cloudinary.com/diuf2wkef/image/upload/v1737469433/work4_in87b4.jpg",
+        ],
+    },
+];
